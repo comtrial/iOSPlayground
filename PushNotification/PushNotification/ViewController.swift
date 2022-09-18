@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         configureUI()
     }
     
+    // MARK: UI setup
     func configureUI() {
         view.backgroundColor = .white
         view.addSubview(text)
