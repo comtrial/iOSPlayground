@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F65F6B2228D318100027AB1B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F6B2128D318100027AB1B /* WidgetKit.framework */; };
+		F65F6B2428D318100027AB1B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F6B2328D318100027AB1B /* SwiftUI.framework */; };
+		F65F6B2728D318100027AB1B /* WidgetWithDeeplink_widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65F6B2628D318100027AB1B /* WidgetWithDeeplink_widget.swift */; };
+		F65F6B2A28D318110027AB1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F65F6B2928D318110027AB1B /* Assets.xcassets */; };
+		F65F6B2C28D318110027AB1B /* WidgetWithDeeplink_widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F65F6B2828D318100027AB1B /* WidgetWithDeeplink_widget.intentdefinition */; };
+		F65F6B2D28D318110027AB1B /* WidgetWithDeeplink_widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = F65F6B2828D318100027AB1B /* WidgetWithDeeplink_widget.intentdefinition */; };
+		F65F6B3028D318110027AB1B /* WidgetWithDeeplink_widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F65F6B1F28D318100027AB1B /* WidgetWithDeeplink_widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F6A3B38F28D2F60100369CB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A3B38E28D2F60100369CB9 /* AppDelegate.swift */; };
 		F6A3B39128D2F60100369CB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A3B39028D2F60100369CB9 /* SceneDelegate.swift */; };
 		F6A3B39328D2F60100369CB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A3B39228D2F60100369CB9 /* ViewController.swift */; };
@@ -14,7 +21,38 @@
 		F6A3B39B28D2F60200369CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A3B39928D2F60200369CB9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F65F6B2E28D318110027AB1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6A3B38328D2F60100369CB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F65F6B1E28D318100027AB1B;
+			remoteInfo = WidgetWithDeeplink_widgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F65F6B3128D318110027AB1B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F65F6B3028D318110027AB1B /* WidgetWithDeeplink_widgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F65F6B1F28D318100027AB1B /* WidgetWithDeeplink_widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetWithDeeplink_widgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65F6B2128D318100027AB1B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		F65F6B2328D318100027AB1B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		F65F6B2628D318100027AB1B /* WidgetWithDeeplink_widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetWithDeeplink_widget.swift; sourceTree = "<group>"; };
+		F65F6B2828D318100027AB1B /* WidgetWithDeeplink_widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WidgetWithDeeplink_widget.intentdefinition; sourceTree = "<group>"; };
+		F65F6B2928D318110027AB1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F65F6B2B28D318110027AB1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6A3B38B28D2F60100369CB9 /* WidgetWithDeeplink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetWithDeeplink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A3B38E28D2F60100369CB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6A3B39028D2F60100369CB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,6 +63,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F65F6B1C28D318100027AB1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65F6B2428D318100027AB1B /* SwiftUI.framework in Frameworks */,
+				F65F6B2228D318100027AB1B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6A3B38828D2F60100369CB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +82,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F65F6B2028D318100027AB1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F65F6B2128D318100027AB1B /* WidgetKit.framework */,
+				F65F6B2328D318100027AB1B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F65F6B2528D318100027AB1B /* WidgetWithDeeplink_widget */ = {
+			isa = PBXGroup;
+			children = (
+				F65F6B2628D318100027AB1B /* WidgetWithDeeplink_widget.swift */,
+				F65F6B2828D318100027AB1B /* WidgetWithDeeplink_widget.intentdefinition */,
+				F65F6B2928D318110027AB1B /* Assets.xcassets */,
+				F65F6B2B28D318110027AB1B /* Info.plist */,
+			);
+			path = WidgetWithDeeplink_widget;
+			sourceTree = "<group>";
+		};
 		F6A3B38228D2F60100369CB9 = {
 			isa = PBXGroup;
 			children = (
 				F6A3B38D28D2F60100369CB9 /* WidgetWithDeeplink */,
+				F65F6B2528D318100027AB1B /* WidgetWithDeeplink_widget */,
+				F65F6B2028D318100027AB1B /* Frameworks */,
 				F6A3B38C28D2F60100369CB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				F6A3B38B28D2F60100369CB9 /* WidgetWithDeeplink.app */,
+				F65F6B1F28D318100027AB1B /* WidgetWithDeeplink_widgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +137,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F65F6B1E28D318100027AB1B /* WidgetWithDeeplink_widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F65F6B3428D318110027AB1B /* Build configuration list for PBXNativeTarget "WidgetWithDeeplink_widgetExtension" */;
+			buildPhases = (
+				F65F6B1B28D318100027AB1B /* Sources */,
+				F65F6B1C28D318100027AB1B /* Frameworks */,
+				F65F6B1D28D318100027AB1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetWithDeeplink_widgetExtension;
+			productName = WidgetWithDeeplink_widgetExtension;
+			productReference = F65F6B1F28D318100027AB1B /* WidgetWithDeeplink_widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		F6A3B38A28D2F60100369CB9 /* WidgetWithDeeplink */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6A3B39F28D2F60200369CB9 /* Build configuration list for PBXNativeTarget "WidgetWithDeeplink" */;
@@ -74,10 +161,12 @@
 				F6A3B38728D2F60100369CB9 /* Sources */,
 				F6A3B38828D2F60100369CB9 /* Frameworks */,
 				F6A3B38928D2F60100369CB9 /* Resources */,
+				F65F6B3128D318110027AB1B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F65F6B2F28D318110027AB1B /* PBXTargetDependency */,
 			);
 			name = WidgetWithDeeplink;
 			productName = WidgetWithDeeplink;
@@ -94,6 +183,9 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					F65F6B1E28D318100027AB1B = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					F6A3B38A28D2F60100369CB9 = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -113,11 +205,20 @@
 			projectRoot = "";
 			targets = (
 				F6A3B38A28D2F60100369CB9 /* WidgetWithDeeplink */,
+				F65F6B1E28D318100027AB1B /* WidgetWithDeeplink_widgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F65F6B1D28D318100027AB1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65F6B2A28D318110027AB1B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6A3B38928D2F60100369CB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,17 +231,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F65F6B1B28D318100027AB1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65F6B2C28D318110027AB1B /* WidgetWithDeeplink_widget.intentdefinition in Sources */,
+				F65F6B2728D318100027AB1B /* WidgetWithDeeplink_widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6A3B38728D2F60100369CB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F6A3B39328D2F60100369CB9 /* ViewController.swift in Sources */,
 				F6A3B38F28D2F60100369CB9 /* AppDelegate.swift in Sources */,
+				F65F6B2D28D318110027AB1B /* WidgetWithDeeplink_widget.intentdefinition in Sources */,
 				F6A3B39128D2F60100369CB9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F65F6B2F28D318110027AB1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F65F6B1E28D318100027AB1B /* WidgetWithDeeplink_widgetExtension */;
+			targetProxy = F65F6B2E28D318110027AB1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F6A3B39928D2F60200369CB9 /* LaunchScreen.storyboard */ = {
@@ -154,6 +273,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F65F6B3228D318110027AB1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XM6U38MLW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetWithDeeplink_widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetWithDeeplink_widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "susan.WidgetWithDeeplink.WidgetWithDeeplink-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F65F6B3328D318110027AB1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XM6U38MLW4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetWithDeeplink_widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetWithDeeplink_widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "susan.WidgetWithDeeplink.WidgetWithDeeplink-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F6A3B39D28D2F60200369CB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -271,6 +444,7 @@
 		F6A3B3A028D2F60200369CB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +473,7 @@
 		F6A3B3A128D2F60200369CB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,6 +502,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F65F6B3428D318110027AB1B /* Build configuration list for PBXNativeTarget "WidgetWithDeeplink_widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F65F6B3228D318110027AB1B /* Debug */,
+				F65F6B3328D318110027AB1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F6A3B38628D2F60100369CB9 /* Build configuration list for PBXProject "WidgetWithDeeplink" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
