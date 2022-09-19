@@ -15,9 +15,10 @@ Widget 을 통한 앱 진입 화면 전환을 위해
 5. TODO
 
 를 구현한 기능 테스트 입니다. 
+<p align="center">
+	<img src=https://user-images.githubusercontent.com/67617819/190979898-3e134b3d-475c-4fea-8ad1-4850fc44ec34.gif width="20%" height="20%">
+</p>
 
-![WidgetWithDeeplink](https://user-images.githubusercontent.com/67617819/190979898-3e134b3d-475c-4fea-8ad1-4850fc44ec34.gif){: width="100"
-}
 
 ### 1. Widget
 
