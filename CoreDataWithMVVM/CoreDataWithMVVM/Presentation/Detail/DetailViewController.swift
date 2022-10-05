@@ -3,7 +3,7 @@ import UIKit
 
 
 class DetailViewController: UIViewController {
-    let viewModel: MemoListViewModel
+    let viewModel: MemoListViewModelWithCombine
     
     private var text: UILabel = UILabel()
     private var  mainTextView = UITextView()
@@ -12,10 +12,10 @@ class DetailViewController: UIViewController {
     let mainTextViewPlaceHolder = "텍스트를 입력하세요"
     
     // 모델
-    let memoManager = CoreDataRepository.shared
+    let memoManager = CoreDataRepositoryWithCombine.shared
     var memoData = MemoData()
     
-    required init(viewModel: MemoListViewModel) {
+    required init(viewModel: MemoListViewModelWithCombine) {
         
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -27,6 +27,7 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("here?")
         setupNVC()
         configureUI()
     }
@@ -86,11 +87,14 @@ class DetailViewController: UIViewController {
         print(mainTextView.text)
         
         let memoText = mainTextView.text
-        memoManager.createMemoData(memoText: memoText) {
-            self.viewModel.loadMemoData()
-            print("[create] \(self.mainTextView.text)")
-            self.navigationController?.popViewController(animated: true)
-        }
+        viewModel.createMemoData(memoText: memoText) 
+        
+        self.navigationController?.popViewController(animated: true) 
+//        memoManager.createMemoData(memoText: memoText) {
+//            self.viewModel.loadMemoData()
+//            print("[create] \(self.mainTextView.text)")
+//            self.navigationController?.popViewController(animated: true)
+//        }
     }
     
     func drawText() {

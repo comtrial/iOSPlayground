@@ -8,7 +8,7 @@ class DetailCoordinator: Coordinator {
     }
     
     func start() {
-        let memoViewModel = MemoListViewModel()
+        let memoViewModel = MemoListViewModelWithCombine()
         self.navigationController?.pushViewController(DetailViewController(viewModel: memoViewModel), animated: true)
     }
 }

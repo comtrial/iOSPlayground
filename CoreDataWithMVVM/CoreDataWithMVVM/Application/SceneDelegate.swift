@@ -18,6 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         let nvc = UINavigationController()
+        
         let coordinator = MainCoordinator()
         coordinator.navigationController = nvc
         coordinator.start()

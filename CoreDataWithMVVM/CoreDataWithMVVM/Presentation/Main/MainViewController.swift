@@ -4,19 +4,16 @@
 //
 //  Created by 최승원 on 2022/09/24.
 //
-
+import SwiftUI
 import UIKit
 import Combine
 
 class MainViewController: UIViewController {
     let selfView = MemoListController()
-    let viewModel: MemoListViewModel
+    let viewModel: MemoListViewModelWithCombine
     var subscriber: Set<AnyCancellable> = .init()
     
-//    @ObservableObject var memoData: MemoData
-    
-    required init(viewModel: MemoListViewModel) {
-        
+    required init(viewModel: MemoListViewModelWithCombine) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -27,7 +24,6 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         print("viewdidload called")
         setupNVC()
         configureUI()
@@ -38,6 +34,7 @@ class MainViewController: UIViewController {
         bind()
         self.selfView.tableView.reloadData()
     }
+    
     
     func configureUI() {
         view.backgroundColor = .white
@@ -52,6 +49,7 @@ class MainViewController: UIViewController {
         selfView.tableView.dataSource = self
     }
     
+    
     func setupNVC() {
         self.navigationItem.title = "할 일 목록"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(nvcBtnClicked))
@@ -63,11 +61,11 @@ class MainViewController: UIViewController {
 
     // MARK: - DataBinding with ViewModel by Combine
     func bind() {
-        viewModel.loadMemoData()
-        viewModel.$meomoData.sink { [unowned self] memoDatas in
-            print("memo \(memoDatas.count)")
-            
+        viewModel.$meomoData.sink { memoDatas in
+            self.selfView.tableView.reloadData()
+//            print("memo \(memoDatas)")
         }.store(in: &subscriber)
+        viewModel.loadMemoData()
     }
 }
 
